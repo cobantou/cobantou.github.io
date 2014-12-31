@@ -60,7 +60,42 @@
 				</ul>
 			</section>
 		</div>
-			
+		
+		<script type="text/javascript">
+			var drawTree=function(c){
+				var col;
+				if(!c==""){
+					col = c;
+				}else{
+					col =13
+				}
+				var	 colm=(col+1)/2,
+					 row=(col+1)/2,
+					 tree=new Array(),
+					 treeArr=new Array();
+				for(i=0;i<row;i++){
+					tree[i]=new Array();
+					for(j=0;j<col;j++){
+						if(j<((col-1)/2-i))
+						{
+							tree[i][j]=" "
+						}else if(j>((col-1)/2+i)){
+							tree[i][j]=" "
+						}
+						else{
+							tree[i][j]="#"
+						}						
+					}
+				}				
+				for(i=0;i<row;i++){
+					treeArr[i]=tree[i].join("");
+					console.log("%c"+treeArr[i],"color:green")
+				}		
+			}
+			drawTree();
+			console.log("你竟然这么无聊来看控制台，好吧，教你玩一个游戏")
+			console.log("可以通过drawTree(s)来画出一棵树，s可为空或数字")
+		</script>
 			
 	</body>
 </html>
