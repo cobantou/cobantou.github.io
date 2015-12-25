@@ -1,0 +1,28 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+li {
+	font-size: 14px;
+	margin-bottom: 10px;
+}
+.container{
+	margin: 0 auto;
+	width: 1024px;
+	padding-top: 50px;
+}
+.brief{
+	font-size: 20px;
+	margin-bottom: 15px;
+}
+h2{
+	font-size: 16px;
+	margin-bottom: 10px;
+}
+h1,h2{
+	font-family: simhei;
+	font-weight: normal;
+}
+section{
+	margin-bottom: 20px;
+}
